@@ -1,6 +1,6 @@
 {
     "name": "Crestlink PJS 2.0",
-    "short_name": "Crestlink PJS 2.0",
+    "short_name": "Crestlink Event",
     "start_url": ".",
     "display": "standalone",
     "background_color": "#0175C2",
