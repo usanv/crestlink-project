@@ -1,1 +1,19 @@
-This is a test version of Event app (on the web). Later will be android and Ios version. Soon...
+# Crest Link — Creatives Infinity
+
+Веб-версия событийного приложения, построенного Creatives Infinity.
+Открыть: **[clpjs.crestlink.net](https://clpjs.crestlink.net)**
+
+Личный кабинет участника, QR-пропуск и регистрация, расписание, галерея,
+рейтинги и полноценная админ-панель. Светлая и тёмная темы.
+
+Собрано на Flutter (одна кодовая база для iOS, Android и веба),
+данные — Firebase: авторизация, Firestore, Storage.
+
+---
+
+Этот репозиторий содержит **только собранную веб-версию** — её раздаёт
+GitHub Pages. Исходный код живёт отдельно.
+
+Файлы `CNAME`, `firebase-messaging-sw.js` и этот README не создаются
+сборкой: при обновлении содержимое `build/web/` кладётся поверх,
+а эти три файла сохраняются.
