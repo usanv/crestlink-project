@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Creatives Infinity</title>
+  <style>
+    html, body { height: 100%; margin: 0; background: #0B1423; }
+  </style>
+  <script>
+    // GitHub Pages отдаёт этот файл на любой несуществующий путь, а путей
+    // у одностраничного приложения нет вовсе: маршрут живёт в хеше.
+    // Поэтому /console превращаем в /#/console — иначе прямая ссылка
+    // на раздел упирается в чужую страницу «404 File not found».
+    (function () {
+      var path = window.location.pathname.replace(/^\/+/, '');
+      // Корень существует как index.html, сюда он не попадает; страховка
+      // на случай нестандартной раздачи — чтобы не зациклиться.
+      var target = '/' + window.location.search +
+        (path ? '#/' + path : window.location.hash);
+      window.location.replace(target);
+    })();
+  </script>
+</head>
+<body></body>
+</html>
